@@ -1,10 +1,10 @@
 <?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
+  <article <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
     <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
+      <h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
-    <div class="entry-content">
+    <div class="entry-content" itemprop="articleBody">
       <?php the_content(); ?>
     </div>
     <footer>

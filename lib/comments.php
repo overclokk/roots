@@ -16,7 +16,11 @@ class Roots_Walker_Comment extends Walker_Comment {
     echo '</ul>';
   }
 
+<<<<<<< HEAD
   function start_el(&$output, $object, $depth = 0, $args = Array(), $current_object_id = 0) {
+=======
+  function start_el(&$output, $comment, $depth = 0, $args = array(), $id = 0) {
+>>>>>>> upstream/master
     $depth++;
     $GLOBALS['comment_depth'] = $depth;
     $GLOBALS['comment'] = $comment;
